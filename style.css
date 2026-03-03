@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("Blue%20Mountain%20Calendar%20Wallpaper%20HD.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+
+#show {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    width: 400px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(255,255,255,0.2));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    width: 70%;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Shake animation for invalid input */
+input:invalid, select:invalid {
+    border: 2px solid red;
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #00c3ff;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0099cc;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
